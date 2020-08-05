@@ -1,0 +1,27 @@
+{
+  "name": "ORM_CSV",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "sequelize": "./node_modules/.bin/sequelize",
+    "initDB": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all",
+    "createDB": "sequelize db:create",
+    "dropDB": "sequelize db:drop",
+    "migrate": "sequelize db:migrate",
+    "seed": "sequelize db:seed",
+    "seedAll": "sequelize db:seed:all"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "iconv-lite": "^0.6.2",
+    "mssql": "^6.1.0",
+    "multer": "^1.4.2",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.44.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "sequelize-cli": "^4.0.0"
+  }
+}
